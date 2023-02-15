@@ -20,7 +20,7 @@ const navConfig = [
   // GENERAL
   // ----------------------------------------------------------------------
   {
-    subheader: 'general v4.1.0',
+    subheader: 'general v4.2.0',
     items: [
       { title: 'One', path: PATH_DASHBOARD.one, icon: ICONS.dashboard },
       { title: 'Two', path: PATH_DASHBOARD.two, icon: ICONS.ecommerce },

@@ -43,6 +43,7 @@ export const HEADER = {
 
 export const NAV = {
   W_BASE: 260,
+  W_LARGE: 320,
   W_DASHBOARD: 280,
   W_DASHBOARD_MINI: 88,
   //

@@ -1,8 +1,11 @@
 import PropTypes from 'prop-types';
 // @mui
+import { useTheme } from '@mui/material/styles';
 import { IconButton } from '@mui/material';
 // hooks
 import useResponsive from '../../../hooks/useResponsive';
+// utils
+import { bgBlur } from '../../../utils/cssStyles';
 // config
 import { NAV } from '../../../config-global';
 // components
@@ -16,6 +19,8 @@ NavToggleButton.propTypes = {
 };
 
 export default function NavToggleButton({ sx, ...other }) {
+  const theme = useTheme();
+
   const { themeLayout, onToggleLayout } = useSettingsContext();
 
   const isDesktop = useResponsive('up', 'lg');
@@ -33,9 +38,9 @@ export default function NavToggleButton({ sx, ...other }) {
         top: 32,
         position: 'fixed',
         left: NAV.W_DASHBOARD - 12,
-        bgcolor: 'background.default',
-        zIndex: (theme) => theme.zIndex.appBar + 1,
-        border: (theme) => `dashed 1px ${theme.palette.divider}`,
+        zIndex: theme.zIndex.appBar + 1,
+        border: `dashed 1px ${theme.palette.divider}`,
+        ...bgBlur({ opacity: 0.48, color: theme.palette.background.default }),
         '&:hover': {
           bgcolor: 'background.default',
         },

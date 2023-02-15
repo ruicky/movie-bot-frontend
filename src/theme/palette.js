@@ -23,7 +23,7 @@ const PRIMARY = {
   main: '#00AB55',
   dark: '#007B55',
   darker: '#005249',
-  contrastText: '#fff',
+  contrastText: '#FFFFFF',
 };
 
 const SECONDARY = {
@@ -32,7 +32,7 @@ const SECONDARY = {
   main: '#3366FF',
   dark: '#1939B7',
   darker: '#091A7A',
-  contrastText: '#fff',
+  contrastText: '#FFFFFF',
 };
 
 const INFO = {
@@ -41,7 +41,7 @@ const INFO = {
   main: '#00B8D9',
   dark: '#006C9C',
   darker: '#003768',
-  contrastText: '#fff',
+  contrastText: '#FFFFFF',
 };
 
 const SUCCESS = {
@@ -50,7 +50,7 @@ const SUCCESS = {
   main: '#36B37E',
   dark: '#1B806A',
   darker: '#0A5554',
-  contrastText: '#fff',
+  contrastText: '#FFFFFF',
 };
 
 const WARNING = {
@@ -68,11 +68,11 @@ const ERROR = {
   main: '#FF5630',
   dark: '#B71D18',
   darker: '#7A0916',
-  contrastText: '#fff',
+  contrastText: '#FFFFFF',
 };
 
 const COMMON = {
-  common: { black: '#000', white: '#fff' },
+  common: { black: '#000000', white: '#FFFFFF' },
   primary: PRIMARY,
   secondary: SECONDARY,
   info: INFO,
@@ -101,7 +101,7 @@ export default function palette(themeMode) {
       secondary: GREY[600],
       disabled: GREY[500],
     },
-    background: { paper: '#fff', default: '#fff', neutral: GREY[200] },
+    background: { paper: '#FFFFFF', default: '#FFFFFF', neutral: GREY[200] },
     action: {
       ...COMMON.action,
       active: GREY[600],
@@ -112,7 +112,7 @@ export default function palette(themeMode) {
     ...COMMON,
     mode: 'dark',
     text: {
-      primary: '#fff',
+      primary: '#FFFFFF',
       secondary: GREY[500],
       disabled: GREY[600],
     },

@@ -1,7 +1,3 @@
-# movie-bot-frontend
-Movie Bot 2.0
-
-# Develop
 ## USING YARN (Recommend)
 
 - yarn install

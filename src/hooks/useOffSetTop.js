@@ -10,7 +10,7 @@ export default function useOffSetTop(top = 100, options) {
 
   useEffect(
     () =>
-      scrollY.onChange((scrollHeight) => {
+      scrollY.on('change', (scrollHeight) => {
         if (scrollHeight > top) {
           setValue(true);
         } else {
