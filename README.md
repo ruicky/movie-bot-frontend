@@ -1,3 +1,5 @@
+# MOVIE-BOT-FRONTEND
+
 ## USING YARN (Recommend)
 
 - yarn install
@@ -7,3 +9,6 @@
 
 - npm i OR npm i --legacy-peer-deps
 - npm start
+
+
+[Learn more:](https://docs.minimals.cc/quick-start)
