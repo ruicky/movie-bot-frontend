@@ -4,29 +4,29 @@ import { PATH_DASHBOARD } from './routes/paths';
 // API
 // ----------------------------------------------------------------------
 
-export const HOST_API_KEY = process.env.REACT_APP_HOST_API_KEY || '';
+export const HOST_API_KEY = import.meta.env.VITE_HOST_API_KEY || '';
 
 export const FIREBASE_API = {
-  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.REACT_APP_FIREBASE_APPID,
-  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APPID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 export const COGNITO_API = {
-  userPoolId: process.env.REACT_APP_AWS_COGNITO_USER_POOL_ID,
-  clientId: process.env.REACT_APP_AWS_COGNITO_CLIENT_ID,
+  userPoolId: import.meta.env.VITE_AWS_COGNITO_USER_POOL_ID,
+  clientId: import.meta.env.VITE_AWS_COGNITO_CLIENT_ID,
 };
 
 export const AUTH0_API = {
-  clientId: process.env.REACT_APP_AUTH0_CLIENT_ID,
-  domain: process.env.REACT_APP_AUTH0_DOMAIN,
+  clientId: import.meta.env.VITE_AUTH0_CLIENT_ID,
+  domain: import.meta.env.VITE_AUTH0_DOMAIN,
 };
 
-export const MAP_API = process.env.REACT_APP_MAPBOX_API;
+export const MAP_API = import.meta.env.VITE_MAPBOX_API;
 
 // ROOT PATH AFTER LOGIN SUCCESSFUL
 export const PATH_AFTER_LOGIN = PATH_DASHBOARD.one;
